@@ -107,7 +107,7 @@ var camera = new THREE.PerspectiveCamera();
 var clock = new THREE.Clock();
 
 camera.far = 50000; // distance from screen
-camera.setFocalLength(24); //object size
+camera.setFocalLength(10); //object size
 
 var texsSrc = {
   fog: 'https://raw.githack.com/Sofa1874/WEBGL/main/hockey.png' }; //object source
@@ -145,7 +145,7 @@ var init = function init() {
     scene.add(fog.obj);
 
     renderer.setClearColor(0x111111, 1.0);
-    camera.position.set(0, 0, 1000); //view position - standart 0,0,1000
+    camera.position.set(0, 0, 500); //view position - standart 0,0,1000
     camera.lookAt(new THREE.Vector3());
     clock.start();
 
