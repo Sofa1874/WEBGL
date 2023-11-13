@@ -47,7 +47,7 @@ Fog = function () {
     tex) {
       // Define Geometries
       var geometry = new THREE.InstancedBufferGeometry();
-      var baseGeometry = new THREE.PlaneBufferGeometry(1100, 1100, 10, 10); //cloudy vast
+      var baseGeometry = new THREE.PlaneBufferGeometry(100, 100, 10, 10); //cloudy vast
 
       // Copy attributes of the base Geometry to the instancing Geometry
       geometry.addAttribute('position', baseGeometry.attributes.position);
